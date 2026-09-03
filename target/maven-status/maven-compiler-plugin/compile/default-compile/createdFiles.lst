@@ -1,5 +1,0 @@
-utils\ConfigReader.class
-utils\ElementUtils.class
-base\DriverFactory.class
-pages\LoginPage.class
-pages\SearchPage.class
