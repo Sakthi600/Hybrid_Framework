@@ -20,7 +20,8 @@ public class SearchSteps {
 
 	@Given("User opens the Application")
 	public void useropensapplication() {
-		searchPage = new SearchPage(DriverFactory.getDriver());
+		DriverFactory.getDriver().get(ConfigReader.getProperty("url"));
+		searchPage =new SearchPage(DriverFactory.getDriver());
 	}
 
 	@When("User enters {string} in the Search field")

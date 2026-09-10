@@ -1,51 +1,52 @@
 package hooks;
 
 import org.openqa.selenium.OutputType;
+
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.testng.ITestContext;
 
+import base.BrowserManager;
 import base.DriverFactory;
 
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 
-import utils.ConfigReader;
-
 public class Hooks {
 
-	DriverFactory DF;
-
-	@Before(order = 0)
+	@Before
 	public void setUp() {
 
-		DF = new DriverFactory();
+		String browser = BrowserManager.getBrowser();
 
-		DF.initDriver(ConfigReader.getProperty("browser"));
+		if (browser == null || browser.isEmpty()) {
+			browser = "chrome";
+		}
 
-		DriverFactory.getDriver().get(ConfigReader.getProperty("url"));
+		System.out.println("Starting Browser: " + browser);
+
+		System.out.println("Thread ID: " + Thread.currentThread().getId());
+
+		DriverFactory.initDriver(browser);
 	}
-
-	
 
 	@After
 	public void tearDown(Scenario scenario) {
 
 		WebDriver driver = DriverFactory.getDriver();
-     try {
-		if (scenario.isFailed() && driver != null) {
+		try {
+			if (scenario.isFailed() && driver != null) {
 
-			byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+				byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
 
-			scenario.attach(screenshot, "image/png", "Failed Screenshot");
-		}  
+				scenario.attach(screenshot, "image/png", "Failed Screenshot");
+			}
 
-     } finally {
-	DriverFactory.quitDriver();
-     }
+		} finally {
+			DriverFactory.quitDriver();
+		}
 
-     }
-
-		
 	}
 
+}

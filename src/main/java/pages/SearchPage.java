@@ -49,11 +49,11 @@ public class SearchPage extends ElementUtils {
 // PRODUCTS
 // ==========================
 
+	@FindBy(xpath = "//div[contains(@class,'product-thumb')]//h4/a")
+	private List<WebElement> productNames;
+
 	@FindBy(css = ".product-thumb")
 	private List<WebElement> products;
-
-	@FindBy(xpath = "//div[contains(@class,'product-thumb'0]//h4//a")
-	private List<WebElement> productNames;
 
 // ==========================
 // SEARCH OPTIONS
@@ -128,12 +128,17 @@ public class SearchPage extends ElementUtils {
 // PRODUCT VALIDATION
 // ==========================
 
-	public boolean isProductDisplayed(String productName) {
+	public boolean isProductDisplayed(String product) {
+
 		wait.until(driver -> !productNames.isEmpty());
-		for (WebElement product : productNames) {
-			String actualProduct = product.getText().trim();
-			System.out.println("Product displayed: [" + actualProduct + "]");
-			if (actualProduct.toLowerCase().contains(productName.toLowerCase())) {
+
+		for (WebElement productElement : productNames) {
+
+			String actualProduct = productElement.getText().trim();
+
+			System.out.println("Product found: [" + actualProduct + "]");
+
+			if (actualProduct.toLowerCase().contains(product.toLowerCase())) {
 
 				return true;
 			}

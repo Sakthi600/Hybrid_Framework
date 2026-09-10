@@ -1,72 +1,53 @@
 package base;
 
-import java.time.Duration;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
-
 public class DriverFactory {
 
-	public static WebDriver driver;
+	private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
 
-	public WebDriver initDriver(String browser) {
+	public static void initDriver(String browser) {
 
-		if (browser.equalsIgnoreCase("Chrome")) {
+		WebDriver webDriver;
 
-			WebDriverManager.chromedriver().setup();
+		if (browser.equalsIgnoreCase("chrome")) {
 
-			driver = new ChromeDriver();
+			webDriver = new ChromeDriver();
+
+		} else if (browser.equalsIgnoreCase("edge")) {
+
+			webDriver = new EdgeDriver();
+
+		} else if (browser.equalsIgnoreCase("firefox")) {
+
+			webDriver = new FirefoxDriver();
+
+		} else {
+
+			throw new RuntimeException("Invalid browser: " + browser);
 		}
 
-		else if (browser.equalsIgnoreCase("Firefox")) {
+		webDriver.manage().window().maximize();
 
-			WebDriverManager.firefoxdriver().setup();
+		driver.set(webDriver);
 
-			driver = new FirefoxDriver();
-		}
-
-		else if (browser.equalsIgnoreCase("Edge")) {
-
-			WebDriverManager.edgedriver().setup();
-
-			driver = new EdgeDriver();
-		}
-
-		else {
-
-			throw new IllegalArgumentException("Unexpected browser: " + browser);
-		}
-
-		configBrowser();
-
-		return getDriver();
-	}
-
-	public static void configBrowser() {
-
-		getDriver().manage().window().maximize();
-
-		getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-
-		getDriver().manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
+		System.out.println("Driver started: " + browser + " | Thread: " + Thread.currentThread().getId());
 	}
 
 	public static WebDriver getDriver() {
-
-		return driver;
+		return driver.get();
 	}
 
 	public static void quitDriver() {
 
-		if (driver != null) {
+		if (driver.get() != null) {
 
-			driver.quit();
+			driver.get().quit();
 
-			driver = null;
+			driver.remove();
 		}
 	}
 }

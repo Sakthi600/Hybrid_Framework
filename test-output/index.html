@@ -1,0 +1,1578 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 6 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Cross_Browser_Suite" class="navigator-link">
+              <span class="suite-name border-failed">Cross Browser Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Cross_Browser_Suite" class="navigator-link ">
+                    <span>C:\Users\Admin\eclipse-workspace\Qafox.com\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Cross_Browser_Suite" class="navigator-link ">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Cross_Browser_Suite" class="navigator-link ">
+                    <span>1 group</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Cross_Browser_Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Cross_Browser_Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Cross_Browser_Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Cross_Browser_Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">44 methods, 6 failed,   38 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Cross_Browser_Suite" class="hide-methods failed suite-Cross_Browser_Suite"> (hide)</a> <!-- hide-methods failed suite-Cross_Browser_Suite -->
+                      <a href="#" panel-name="suite-Cross_Browser_Suite" class="show-methods failed suite-Cross_Browser_Suite"> (show)</a> <!-- show-methods failed suite-Cross_Browser_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Cross_Browser_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Cross_Browser_Suite" title="runners.ChromeRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify Search using product description&quot;, &quot;Search Functionality&quot;)">runScenario("Verify Search using product description", "Search Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Cross_Browser_Suite" title="runners.ChromeRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify Search by selecting category&quot;, &quot;Search Functionality&quot;)">runScenario("Verify Search by selecting category", "Search Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Cross_Browser_Suite" title="runners.ChromeRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify Search by selecting subcategories&quot;, &quot;Search Functionality&quot;)">runScenario("Verify Search by selecting subcategories", "Search Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Cross_Browser_Suite" title="runners.EdgeRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify Search by selecting category&quot;, &quot;Search Functionality&quot;)">runScenario("Verify Search by selecting category", "Search Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Cross_Browser_Suite" title="runners.EdgeRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify Search using product description&quot;, &quot;Search Functionality&quot;)">runScenario("Verify Search using product description", "Search Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Cross_Browser_Suite" title="runners.EdgeRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify Search by selecting subcategories&quot;, &quot;Search Functionality&quot;)">runScenario("Verify Search by selecting subcategories", "Search Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Cross_Browser_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Cross_Browser_Suite" class="hide-methods passed suite-Cross_Browser_Suite"> (hide)</a> <!-- hide-methods passed suite-Cross_Browser_Suite -->
+                      <a href="#" panel-name="suite-Cross_Browser_Suite" class="show-methods passed suite-Cross_Browser_Suite"> (show)</a> <!-- show-methods passed suite-Cross_Browser_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Cross_Browser_Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Cross_Browser_Suite" title="runners.ChromeRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify user can sort products&quot;, &quot;Search Functionality&quot;)">runScenario("Verify user can sort products", "Search Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Cross_Browser_Suite" title="runners.ChromeRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify number of products displayed&quot;, &quot;Search Functionality&quot;)">runScenario("Verify number of products displayed", "Search Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Cross_Browser_Suite" title="runners.ChromeRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify searching after login&quot;, &quot;Search Functionality&quot;)">runScenario("Verify searching after login", "Search Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Cross_Browser_Suite" title="runners.ChromeRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify navigation to Product Compare&quot;, &quot;Search Functionality&quot;)">runScenario("Verify navigation to Product Compare", "Search Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Cross_Browser_Suite" title="runners.ChromeRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify searching with an existing Product Name&quot;, &quot;Search Functionality&quot;)">runScenario("Verify searching with an existing Product Name", "Search Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Cross_Browser_Suite" title="runners.ChromeRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify searching with a non existing Product Name&quot;, &quot;Search Functionality&quot;)">runScenario("Verify searching with a non existing Product Name", "Search Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Cross_Browser_Suite" title="runners.ChromeRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify Search textbox and Search icon&quot;, &quot;Search Functionality&quot;)">runScenario("Verify Search textbox and Search icon", "Search Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Cross_Browser_Suite" title="runners.ChromeRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify Search using keyboard&quot;, &quot;Search Functionality&quot;)">runScenario("Verify Search using keyboard", "Search Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Cross_Browser_Suite" title="runners.ChromeRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify navigation to Search page from Site Map&quot;, &quot;Search Functionality&quot;)">runScenario("Verify navigation to Search page from Site Map", "Search Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Cross_Browser_Suite" title="runners.ChromeRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify Search functionality&quot;, &quot;Search Functionality&quot;)">runScenario("Verify Search functionality", "Search Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Cross_Browser_Suite" title="runners.ChromeRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify List and Grid views with multiple products&quot;, &quot;Search Functionality&quot;)">runScenario("Verify List and Grid views with multiple products", "Search Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Cross_Browser_Suite" title="runners.ChromeRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify search criteria returning multiple products&quot;, &quot;Search Functionality&quot;)">runScenario("Verify search criteria returning multiple products", "Search Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Cross_Browser_Suite" title="runners.ChromeRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify Search page Heading Title and URL&quot;, &quot;Search Functionality&quot;)">runScenario("Verify Search page Heading Title and URL", "Search Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Cross_Browser_Suite" title="runners.ChromeRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify searching without providing Product Name&quot;, &quot;Search Functionality&quot;)">runScenario("Verify searching without providing Product Name", "Search Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Cross_Browser_Suite" title="runners.ChromeRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify Search field on application page&quot;, &quot;Search Functionality&quot;)">runScenario("Verify Search field on application page", "Search Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Cross_Browser_Suite" title="runners.ChromeRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify Search UI&quot;, &quot;Search Functionality&quot;)">runScenario("Verify Search UI", "Search Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Cross_Browser_Suite" title="runners.ChromeRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify List and Grid views with one product&quot;, &quot;Search Functionality&quot;)">runScenario("Verify List and Grid views with one product", "Search Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Cross_Browser_Suite" title="runners.ChromeRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify Search textbox placeholder&quot;, &quot;Search Functionality&quot;)">runScenario("Verify Search textbox placeholder", "Search Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Cross_Browser_Suite" title="runners.ChromeRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify Breadcrumb of Search page&quot;, &quot;Search Functionality&quot;)">runScenario("Verify Breadcrumb of Search page", "Search Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Cross_Browser_Suite" title="runners.EdgeRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify searching with an existing Product Name&quot;, &quot;Search Functionality&quot;)">runScenario("Verify searching with an existing Product Name", "Search Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Cross_Browser_Suite" title="runners.EdgeRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify Search textbox placeholder&quot;, &quot;Search Functionality&quot;)">runScenario("Verify Search textbox placeholder", "Search Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Cross_Browser_Suite" title="runners.EdgeRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify navigation to Product Compare&quot;, &quot;Search Functionality&quot;)">runScenario("Verify navigation to Product Compare", "Search Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Cross_Browser_Suite" title="runners.EdgeRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify navigation to Search page from Site Map&quot;, &quot;Search Functionality&quot;)">runScenario("Verify navigation to Search page from Site Map", "Search Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Cross_Browser_Suite" title="runners.EdgeRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify user can sort products&quot;, &quot;Search Functionality&quot;)">runScenario("Verify user can sort products", "Search Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Cross_Browser_Suite" title="runners.EdgeRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify Search using keyboard&quot;, &quot;Search Functionality&quot;)">runScenario("Verify Search using keyboard", "Search Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Cross_Browser_Suite" title="runners.EdgeRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify Search functionality&quot;, &quot;Search Functionality&quot;)">runScenario("Verify Search functionality", "Search Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Cross_Browser_Suite" title="runners.EdgeRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify searching without providing Product Name&quot;, &quot;Search Functionality&quot;)">runScenario("Verify searching without providing Product Name", "Search Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Cross_Browser_Suite" title="runners.EdgeRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify number of products displayed&quot;, &quot;Search Functionality&quot;)">runScenario("Verify number of products displayed", "Search Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Cross_Browser_Suite" title="runners.EdgeRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify List and Grid views with multiple products&quot;, &quot;Search Functionality&quot;)">runScenario("Verify List and Grid views with multiple products", "Search Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Cross_Browser_Suite" title="runners.EdgeRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify searching after login&quot;, &quot;Search Functionality&quot;)">runScenario("Verify searching after login", "Search Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Cross_Browser_Suite" title="runners.EdgeRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify Search UI&quot;, &quot;Search Functionality&quot;)">runScenario("Verify Search UI", "Search Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Cross_Browser_Suite" title="runners.EdgeRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify Search page Heading Title and URL&quot;, &quot;Search Functionality&quot;)">runScenario("Verify Search page Heading Title and URL", "Search Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Cross_Browser_Suite" title="runners.EdgeRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify searching with a non existing Product Name&quot;, &quot;Search Functionality&quot;)">runScenario("Verify searching with a non existing Product Name", "Search Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Cross_Browser_Suite" title="runners.EdgeRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify List and Grid views with one product&quot;, &quot;Search Functionality&quot;)">runScenario("Verify List and Grid views with one product", "Search Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Cross_Browser_Suite" title="runners.EdgeRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify search criteria returning multiple products&quot;, &quot;Search Functionality&quot;)">runScenario("Verify search criteria returning multiple products", "Search Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Cross_Browser_Suite" title="runners.EdgeRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify Search textbox and Search icon&quot;, &quot;Search Functionality&quot;)">runScenario("Verify Search textbox and Search icon", "Search Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Cross_Browser_Suite" title="runners.EdgeRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify Search field on application page&quot;, &quot;Search Functionality&quot;)">runScenario("Verify Search field on application page", "Search Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Cross_Browser_Suite" title="runners.EdgeRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify Breadcrumb of Search page&quot;, &quot;Search Functionality&quot;)">runScenario("Verify Breadcrumb of Search page", "Search Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Cross_Browser_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Cross_Browser_Suite" class="panel Cross_Browser_Suite">
+          <div class="suite-Cross_Browser_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">runners.ChromeRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify Search using product description&quot;, &quot;Search Functionality&quot;)">
+                  </a> <!-- runScenario("Verify Search using product description", "Search Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify Search using product description","Search Functionality")</span>
+                  <div class="stack-trace">org.openqa.selenium.InvalidElementStateException: invalid element state
+  (Session info: chrome=151.0.7922.174)
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2fc0c9f717b4b7c34d851a89c41be2e7, clearElement {id=f.66698A5FB63599650AE1878E0C2E5341.d.A371803B503DDD8C8FA1CDF493B9E10B.e.53}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.174, chrome: {chromedriverVersion: 151.0.7922.138 (41fa8244239..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56168}, goog:processID: 20988, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56168/devtoo..., se:cdpVersion: 151.0.7922.174, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (2fc0c9f717b4b7c34d851a89c41be2e7)] -&gt; xpath: (//input[@id=&apos;button-search&apos;])[1]]
+Session ID: 2fc0c9f717b4b7c34d851a89c41be2e7
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:129)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.clear(Unknown Source)
+	at utils.ElementUtils.type(ElementUtils.java:39)
+	at pages.SearchPage.enterSearchCriteria(SearchPage.java:108)
+	at stepdefinitions.SearchSteps.userEntersInTheSearchCriteriaField(SearchSteps.java:41)
+	at ✽.User enters &quot;iLife&quot; in the Search Criteria field(file:///C:/Users/Admin/eclipse-workspace/Qafox.com/src/test/resources/features/Search.feature:48)
+... Removed 5 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify Search by selecting category&quot;, &quot;Search Functionality&quot;)">
+                  </a> <!-- runScenario("Verify Search by selecting category", "Search Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify Search by selecting category","Search Functionality")</span>
+                  <div class="stack-trace">org.openqa.selenium.InvalidElementStateException: invalid element state
+  (Session info: chrome=151.0.7922.174)
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c1ad812099ad89261936f9f9774b17de, clearElement {id=f.A5D263A7CD32FE670799505A9D88DEED.d.15FD0D8E8EB97E3504381AE30F6C2C5D.e.54}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.174, chrome: {chromedriverVersion: 151.0.7922.138 (41fa8244239..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56284}, goog:processID: 24820, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56284/devtoo..., se:cdpVersion: 151.0.7922.174, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (c1ad812099ad89261936f9f9774b17de)] -&gt; xpath: (//input[@id=&apos;button-search&apos;])[1]]
+Session ID: c1ad812099ad89261936f9f9774b17de
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:129)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.clear(Unknown Source)
+	at utils.ElementUtils.type(ElementUtils.java:39)
+	at pages.SearchPage.enterSearchCriteria(SearchPage.java:108)
+	at stepdefinitions.SearchSteps.userEntersInTheSearchCriteriaField(SearchSteps.java:41)
+	at ✽.User enters &quot;iMac&quot; in the Search Criteria field(file:///C:/Users/Admin/eclipse-workspace/Qafox.com/src/test/resources/features/Search.feature:57)
+... Removed 5 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify Search by selecting subcategories&quot;, &quot;Search Functionality&quot;)">
+                  </a> <!-- runScenario("Verify Search by selecting subcategories", "Search Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify Search by selecting subcategories","Search Functionality")</span>
+                  <div class="stack-trace">org.openqa.selenium.InvalidElementStateException: invalid element state
+  (Session info: chrome=151.0.7922.174)
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [23073d6872d7b6d1466329313fe7700f, clearElement {id=f.C9ABB635B1A1EF2B5A332DD203A03D1D.d.D12842BC318AD005C1D2D7F3E31FF783.e.55}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.174, chrome: {chromedriverVersion: 151.0.7922.138 (41fa8244239..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56362}, goog:processID: 2872, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56362/devtoo..., se:cdpVersion: 151.0.7922.174, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (23073d6872d7b6d1466329313fe7700f)] -&gt; xpath: (//input[@id=&apos;button-search&apos;])[1]]
+Session ID: 23073d6872d7b6d1466329313fe7700f
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:129)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.clear(Unknown Source)
+	at utils.ElementUtils.type(ElementUtils.java:39)
+	at pages.SearchPage.enterSearchCriteria(SearchPage.java:108)
+	at stepdefinitions.SearchSteps.userEntersInTheSearchCriteriaField(SearchSteps.java:41)
+	at ✽.User enters &quot;iMac&quot; in the Search Criteria field(file:///C:/Users/Admin/eclipse-workspace/Qafox.com/src/test/resources/features/Search.feature:66)
+... Removed 5 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Cross_Browser_Suite-class-failed -->
+          <div class="suite-Cross_Browser_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">runners.EdgeRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify Search by selecting category&quot;, &quot;Search Functionality&quot;)">
+                  </a> <!-- runScenario("Verify Search by selecting category", "Search Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify Search by selecting category","Search Functionality")</span>
+                  <div class="stack-trace">org.openqa.selenium.InvalidElementStateException: invalid element state
+  (Session info: MicrosoftEdge=152.0.4191.66)
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.12&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [9520654d3a62e32be1b644a91c5b5dc8, clearElement {id=f.4908CF79557444DC5103F451D27D5AAA.d.BE6A4B3572D04625E8C150BC0ABC703D.e.55}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 152.0.4191.66, fedcm:accounts: true, goog:processID: 17700, ms:edgeOptions: {debuggerAddress: localhost:56364}, msedge: {msedgedriverVersion: 152.0.4191.66 (cc2931e6363a..., userDataDir: C:\Users\Admin\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56364/devtoo..., se:cdpVersion: 152.0.4191.66, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (9520654d3a62e32be1b644a91c5b5dc8)] -&gt; xpath: (//input[@id=&apos;button-search&apos;])[1]]
+Session ID: 9520654d3a62e32be1b644a91c5b5dc8
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:129)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.clear(Unknown Source)
+	at utils.ElementUtils.type(ElementUtils.java:39)
+	at pages.SearchPage.enterSearchCriteria(SearchPage.java:108)
+	at stepdefinitions.SearchSteps.userEntersInTheSearchCriteriaField(SearchSteps.java:41)
+	at ✽.User enters &quot;iMac&quot; in the Search Criteria field(file:///C:/Users/Admin/eclipse-workspace/Qafox.com/src/test/resources/features/Search.feature:57)
+... Removed 5 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify Search using product description&quot;, &quot;Search Functionality&quot;)">
+                  </a> <!-- runScenario("Verify Search using product description", "Search Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify Search using product description","Search Functionality")</span>
+                  <div class="stack-trace">org.openqa.selenium.InvalidElementStateException: invalid element state
+  (Session info: MicrosoftEdge=152.0.4191.66)
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.12&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [6bdf1d172f422cf5ecb9b515a237f59b, clearElement {id=f.4F92DEC06FF940C565A20B8C42A6671A.d.E5A901018A010AE8CB441458BDE79979.e.69}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 152.0.4191.66, fedcm:accounts: true, goog:processID: 20696, ms:edgeOptions: {debuggerAddress: localhost:56250}, msedge: {msedgedriverVersion: 152.0.4191.66 (cc2931e6363a..., userDataDir: C:\Users\Admin\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56250/devtoo..., se:cdpVersion: 152.0.4191.66, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (6bdf1d172f422cf5ecb9b515a237f59b)] -&gt; xpath: (//input[@id=&apos;button-search&apos;])[1]]
+Session ID: 6bdf1d172f422cf5ecb9b515a237f59b
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:129)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.clear(Unknown Source)
+	at utils.ElementUtils.type(ElementUtils.java:39)
+	at pages.SearchPage.enterSearchCriteria(SearchPage.java:108)
+	at stepdefinitions.SearchSteps.userEntersInTheSearchCriteriaField(SearchSteps.java:41)
+	at ✽.User enters &quot;iLife&quot; in the Search Criteria field(file:///C:/Users/Admin/eclipse-workspace/Qafox.com/src/test/resources/features/Search.feature:48)
+... Removed 5 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify Search by selecting subcategories&quot;, &quot;Search Functionality&quot;)">
+                  </a> <!-- runScenario("Verify Search by selecting subcategories", "Search Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify Search by selecting subcategories","Search Functionality")</span>
+                  <div class="stack-trace">org.openqa.selenium.InvalidElementStateException: invalid element state
+  (Session info: MicrosoftEdge=152.0.4191.66)
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.12&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [597f502782265db6cd68d00f8b1c17c5, clearElement {id=f.48B6BA5A63CBFBC03770898FF4826828.d.BFC5133D95CD78708888172942CB0755.e.34}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 152.0.4191.66, fedcm:accounts: true, goog:processID: 24904, ms:edgeOptions: {debuggerAddress: localhost:56462}, msedge: {msedgedriverVersion: 152.0.4191.66 (cc2931e6363a..., userDataDir: C:\Users\Admin\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56462/devtoo..., se:cdpVersion: 152.0.4191.66, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (597f502782265db6cd68d00f8b1c17c5)] -&gt; xpath: (//input[@id=&apos;button-search&apos;])[1]]
+Session ID: 597f502782265db6cd68d00f8b1c17c5
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:129)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.clear(Unknown Source)
+	at utils.ElementUtils.type(ElementUtils.java:39)
+	at pages.SearchPage.enterSearchCriteria(SearchPage.java:108)
+	at stepdefinitions.SearchSteps.userEntersInTheSearchCriteriaField(SearchSteps.java:41)
+	at ✽.User enters &quot;iMac&quot; in the Search Criteria field(file:///C:/Users/Admin/eclipse-workspace/Qafox.com/src/test/resources/features/Search.feature:66)
+... Removed 5 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Cross_Browser_Suite-class-failed -->
+          <div class="suite-Cross_Browser_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">runners.ChromeRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify user can sort products&quot;, &quot;Search Functionality&quot;)">
+                  </a> <!-- runScenario("Verify user can sort products", "Search Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify user can sort products","Search Functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify number of products displayed&quot;, &quot;Search Functionality&quot;)">
+                  </a> <!-- runScenario("Verify number of products displayed", "Search Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify number of products displayed","Search Functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify searching after login&quot;, &quot;Search Functionality&quot;)">
+                  </a> <!-- runScenario("Verify searching after login", "Search Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify searching after login","Search Functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify navigation to Product Compare&quot;, &quot;Search Functionality&quot;)">
+                  </a> <!-- runScenario("Verify navigation to Product Compare", "Search Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify navigation to Product Compare","Search Functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify searching with an existing Product Name&quot;, &quot;Search Functionality&quot;)">
+                  </a> <!-- runScenario("Verify searching with an existing Product Name", "Search Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify searching with an existing Product Name","Search Functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify searching with a non existing Product Name&quot;, &quot;Search Functionality&quot;)">
+                  </a> <!-- runScenario("Verify searching with a non existing Product Name", "Search Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify searching with a non existing Product Name","Search Functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify Search textbox and Search icon&quot;, &quot;Search Functionality&quot;)">
+                  </a> <!-- runScenario("Verify Search textbox and Search icon", "Search Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify Search textbox and Search icon","Search Functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify Search using keyboard&quot;, &quot;Search Functionality&quot;)">
+                  </a> <!-- runScenario("Verify Search using keyboard", "Search Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify Search using keyboard","Search Functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify navigation to Search page from Site Map&quot;, &quot;Search Functionality&quot;)">
+                  </a> <!-- runScenario("Verify navigation to Search page from Site Map", "Search Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify navigation to Search page from Site Map","Search Functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify Search functionality&quot;, &quot;Search Functionality&quot;)">
+                  </a> <!-- runScenario("Verify Search functionality", "Search Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify Search functionality","Search Functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify List and Grid views with multiple products&quot;, &quot;Search Functionality&quot;)">
+                  </a> <!-- runScenario("Verify List and Grid views with multiple products", "Search Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify List and Grid views with multiple products","Search Functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify search criteria returning multiple products&quot;, &quot;Search Functionality&quot;)">
+                  </a> <!-- runScenario("Verify search criteria returning multiple products", "Search Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify search criteria returning multiple products","Search Functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify Search page Heading Title and URL&quot;, &quot;Search Functionality&quot;)">
+                  </a> <!-- runScenario("Verify Search page Heading Title and URL", "Search Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify Search page Heading Title and URL","Search Functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify searching without providing Product Name&quot;, &quot;Search Functionality&quot;)">
+                  </a> <!-- runScenario("Verify searching without providing Product Name", "Search Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify searching without providing Product Name","Search Functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify Search field on application page&quot;, &quot;Search Functionality&quot;)">
+                  </a> <!-- runScenario("Verify Search field on application page", "Search Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify Search field on application page","Search Functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify Search UI&quot;, &quot;Search Functionality&quot;)">
+                  </a> <!-- runScenario("Verify Search UI", "Search Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify Search UI","Search Functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify List and Grid views with one product&quot;, &quot;Search Functionality&quot;)">
+                  </a> <!-- runScenario("Verify List and Grid views with one product", "Search Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify List and Grid views with one product","Search Functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify Search textbox placeholder&quot;, &quot;Search Functionality&quot;)">
+                  </a> <!-- runScenario("Verify Search textbox placeholder", "Search Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify Search textbox placeholder","Search Functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify Breadcrumb of Search page&quot;, &quot;Search Functionality&quot;)">
+                  </a> <!-- runScenario("Verify Breadcrumb of Search page", "Search Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify Breadcrumb of Search page","Search Functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Cross_Browser_Suite-class-passed -->
+          <div class="suite-Cross_Browser_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">runners.EdgeRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify searching with an existing Product Name&quot;, &quot;Search Functionality&quot;)">
+                  </a> <!-- runScenario("Verify searching with an existing Product Name", "Search Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify searching with an existing Product Name","Search Functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify Search textbox placeholder&quot;, &quot;Search Functionality&quot;)">
+                  </a> <!-- runScenario("Verify Search textbox placeholder", "Search Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify Search textbox placeholder","Search Functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify navigation to Product Compare&quot;, &quot;Search Functionality&quot;)">
+                  </a> <!-- runScenario("Verify navigation to Product Compare", "Search Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify navigation to Product Compare","Search Functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify navigation to Search page from Site Map&quot;, &quot;Search Functionality&quot;)">
+                  </a> <!-- runScenario("Verify navigation to Search page from Site Map", "Search Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify navigation to Search page from Site Map","Search Functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify user can sort products&quot;, &quot;Search Functionality&quot;)">
+                  </a> <!-- runScenario("Verify user can sort products", "Search Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify user can sort products","Search Functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify Search using keyboard&quot;, &quot;Search Functionality&quot;)">
+                  </a> <!-- runScenario("Verify Search using keyboard", "Search Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify Search using keyboard","Search Functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify Search functionality&quot;, &quot;Search Functionality&quot;)">
+                  </a> <!-- runScenario("Verify Search functionality", "Search Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify Search functionality","Search Functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify searching without providing Product Name&quot;, &quot;Search Functionality&quot;)">
+                  </a> <!-- runScenario("Verify searching without providing Product Name", "Search Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify searching without providing Product Name","Search Functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify number of products displayed&quot;, &quot;Search Functionality&quot;)">
+                  </a> <!-- runScenario("Verify number of products displayed", "Search Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify number of products displayed","Search Functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify List and Grid views with multiple products&quot;, &quot;Search Functionality&quot;)">
+                  </a> <!-- runScenario("Verify List and Grid views with multiple products", "Search Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify List and Grid views with multiple products","Search Functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify searching after login&quot;, &quot;Search Functionality&quot;)">
+                  </a> <!-- runScenario("Verify searching after login", "Search Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify searching after login","Search Functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify Search UI&quot;, &quot;Search Functionality&quot;)">
+                  </a> <!-- runScenario("Verify Search UI", "Search Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify Search UI","Search Functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify Search page Heading Title and URL&quot;, &quot;Search Functionality&quot;)">
+                  </a> <!-- runScenario("Verify Search page Heading Title and URL", "Search Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify Search page Heading Title and URL","Search Functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify searching with a non existing Product Name&quot;, &quot;Search Functionality&quot;)">
+                  </a> <!-- runScenario("Verify searching with a non existing Product Name", "Search Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify searching with a non existing Product Name","Search Functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify List and Grid views with one product&quot;, &quot;Search Functionality&quot;)">
+                  </a> <!-- runScenario("Verify List and Grid views with one product", "Search Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify List and Grid views with one product","Search Functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify search criteria returning multiple products&quot;, &quot;Search Functionality&quot;)">
+                  </a> <!-- runScenario("Verify search criteria returning multiple products", "Search Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify search criteria returning multiple products","Search Functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify Search textbox and Search icon&quot;, &quot;Search Functionality&quot;)">
+                  </a> <!-- runScenario("Verify Search textbox and Search icon", "Search Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify Search textbox and Search icon","Search Functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify Search field on application page&quot;, &quot;Search Functionality&quot;)">
+                  </a> <!-- runScenario("Verify Search field on application page", "Search Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify Search field on application page","Search Functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify Breadcrumb of Search page&quot;, &quot;Search Functionality&quot;)">
+                  </a> <!-- runScenario("Verify Breadcrumb of Search page", "Search Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify Breadcrumb of Search page","Search Functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Cross_Browser_Suite-class-passed -->
+        </div> <!-- panel Cross_Browser_Suite -->
+        <div panel-name="test-xml-Cross_Browser_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\Admin\eclipse-workspace\Qafox.com\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;Cross Browser Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;Chrome Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;runners.ChromeRunner&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Chrome Test --&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;Edge Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;runners.EdgeRunner&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Edge Test --&gt;
+&lt;/suite&gt; &lt;!-- Cross Browser Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Cross_Browser_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Cross Browser Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Chrome Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Edge Test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Cross_Browser_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Cross Browser Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">cucumber</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">runScenario</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Cross_Browser_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Cross Browser Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Cross_Browser_Suite');
+function tableData_Cross_Browser_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(44);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'runScenario')
+data.setCell(0, 2, 'runners.EdgeRunner')
+data.setCell(0, 3, 89021);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'runScenario')
+data.setCell(1, 2, 'runners.ChromeRunner')
+data.setCell(1, 3, 88818);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'runScenario')
+data.setCell(2, 2, 'runners.EdgeRunner')
+data.setCell(2, 3, 88708);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'runScenario')
+data.setCell(3, 2, 'runners.EdgeRunner')
+data.setCell(3, 3, 84779);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'runScenario')
+data.setCell(4, 2, 'runners.ChromeRunner')
+data.setCell(4, 3, 84633);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'runScenario')
+data.setCell(5, 2, 'runners.EdgeRunner')
+data.setCell(5, 3, 83682);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'runScenario')
+data.setCell(6, 2, 'runners.ChromeRunner')
+data.setCell(6, 3, 81262);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'runScenario')
+data.setCell(7, 2, 'runners.ChromeRunner')
+data.setCell(7, 3, 76454);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'runScenario')
+data.setCell(8, 2, 'runners.EdgeRunner')
+data.setCell(8, 3, 74961);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'runScenario')
+data.setCell(9, 2, 'runners.EdgeRunner')
+data.setCell(9, 3, 73921);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'runScenario')
+data.setCell(10, 2, 'runners.ChromeRunner')
+data.setCell(10, 3, 73712);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'runScenario')
+data.setCell(11, 2, 'runners.EdgeRunner')
+data.setCell(11, 3, 72939);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'runScenario')
+data.setCell(12, 2, 'runners.ChromeRunner')
+data.setCell(12, 3, 71889);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'runScenario')
+data.setCell(13, 2, 'runners.ChromeRunner')
+data.setCell(13, 3, 69318);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'runScenario')
+data.setCell(14, 2, 'runners.EdgeRunner')
+data.setCell(14, 3, 68787);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'runScenario')
+data.setCell(15, 2, 'runners.ChromeRunner')
+data.setCell(15, 3, 66624);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'runScenario')
+data.setCell(16, 2, 'runners.EdgeRunner')
+data.setCell(16, 3, 66515);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'runScenario')
+data.setCell(17, 2, 'runners.EdgeRunner')
+data.setCell(17, 3, 61917);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'runScenario')
+data.setCell(18, 2, 'runners.ChromeRunner')
+data.setCell(18, 3, 58750);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'runScenario')
+data.setCell(19, 2, 'runners.EdgeRunner')
+data.setCell(19, 3, 58638);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'runScenario')
+data.setCell(20, 2, 'runners.EdgeRunner')
+data.setCell(20, 3, 55147);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'runScenario')
+data.setCell(21, 2, 'runners.ChromeRunner')
+data.setCell(21, 3, 54809);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'runScenario')
+data.setCell(22, 2, 'runners.ChromeRunner')
+data.setCell(22, 3, 51634);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'runScenario')
+data.setCell(23, 2, 'runners.EdgeRunner')
+data.setCell(23, 3, 50479);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'runScenario')
+data.setCell(24, 2, 'runners.ChromeRunner')
+data.setCell(24, 3, 45277);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'runScenario')
+data.setCell(25, 2, 'runners.EdgeRunner')
+data.setCell(25, 3, 42042);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'runScenario')
+data.setCell(26, 2, 'runners.ChromeRunner')
+data.setCell(26, 3, 41789);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'runScenario')
+data.setCell(27, 2, 'runners.ChromeRunner')
+data.setCell(27, 3, 41760);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'runScenario')
+data.setCell(28, 2, 'runners.ChromeRunner')
+data.setCell(28, 3, 39237);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'runScenario')
+data.setCell(29, 2, 'runners.EdgeRunner')
+data.setCell(29, 3, 38790);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'runScenario')
+data.setCell(30, 2, 'runners.EdgeRunner')
+data.setCell(30, 3, 35726);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'runScenario')
+data.setCell(31, 2, 'runners.ChromeRunner')
+data.setCell(31, 3, 33954);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'runScenario')
+data.setCell(32, 2, 'runners.ChromeRunner')
+data.setCell(32, 3, 26650);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'runScenario')
+data.setCell(33, 2, 'runners.EdgeRunner')
+data.setCell(33, 3, 25794);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'runScenario')
+data.setCell(34, 2, 'runners.ChromeRunner')
+data.setCell(34, 3, 25251);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'runScenario')
+data.setCell(35, 2, 'runners.ChromeRunner')
+data.setCell(35, 3, 21943);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'runScenario')
+data.setCell(36, 2, 'runners.ChromeRunner')
+data.setCell(36, 3, 18144);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'runScenario')
+data.setCell(37, 2, 'runners.ChromeRunner')
+data.setCell(37, 3, 6758);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'runScenario')
+data.setCell(38, 2, 'runners.EdgeRunner')
+data.setCell(38, 3, 6708);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'runScenario')
+data.setCell(39, 2, 'runners.EdgeRunner')
+data.setCell(39, 3, 5193);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'runScenario')
+data.setCell(40, 2, 'runners.ChromeRunner')
+data.setCell(40, 3, 5049);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'runScenario')
+data.setCell(41, 2, 'runners.EdgeRunner')
+data.setCell(41, 3, 4039);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'runScenario')
+data.setCell(42, 2, 'runners.EdgeRunner')
+data.setCell(42, 3, 2826);
+data.setCell(43, 0, 43)
+data.setCell(43, 1, 'runScenario')
+data.setCell(43, 2, 'runners.EdgeRunner')
+data.setCell(43, 3, 2553);
+window.suiteTableData['Cross_Browser_Suite']= { tableData: data, tableDiv: 'times-div-Cross_Browser_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 18 minutes</span>
+              <div id="times-div-Cross_Browser_Suite">
+              </div> <!-- times-div-Cross_Browser_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Cross_Browser_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Cross Browser Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Cross_Browser_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Cross_Browser_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">runners.ChromeRunner</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass(org.testng.TestRunner@11f0a5a1)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">runners.EdgeRunner</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass(org.testng.TestRunner@10f7f7de)</span>
+                <span class="method-start">1 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">runners.ChromeRunner</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setChrome</span>
+                <span class="method-start">4135 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">runners.EdgeRunner</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setEdge</span>
+                <span class="method-start">4136 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">runners.ChromeRunner</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify searching with an existing Product Name", "Search Functionality")</span>
+                <span class="method-start">4356 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">runners.EdgeRunner</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify searching with an existing Product Name", "Search Functionality")</span>
+                <span class="method-start">4358 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify searching with a non existing Product Name", "Search Functionality")</span>
+                <span class="method-start">93131 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">runners.ChromeRunner</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify searching with a non existing Product Name", "Search Functionality")</span>
+                <span class="method-start">93220 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">runners.EdgeRunner</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify searching without providing Product Name", "Search Functionality")</span>
+                <span class="method-start">166086 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">runners.ChromeRunner</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify searching without providing Product Name", "Search Functionality")</span>
+                <span class="method-start">166947 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify searching after login", "Search Functionality")</span>
+                <span class="method-start">206207 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">runners.EdgeRunner</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify searching after login", "Search Functionality")</span>
+                <span class="method-start">232731 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">runners.ChromeRunner</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify search criteria returning multiple products", "Search Functionality")</span>
+                <span class="method-start">287488 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify Search textbox placeholder", "Search Functionality")</span>
+                <span class="method-start">314158 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">runners.EdgeRunner</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify search criteria returning multiple products", "Search Functionality")</span>
+                <span class="method-start">316421 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify Search textbox placeholder", "Search Functionality")</span>
+                <span class="method-start">355221 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">runners.ChromeRunner</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Verify Search using product description", "Search Functionality")</span>
+                <span class="method-start">355926 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">runners.EdgeRunner</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Verify Search using product description", "Search Functionality")</span>
+                <span class="method-start">424032 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">runners.ChromeRunner</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Verify Search by selecting category", "Search Functionality")</span>
+                <span class="method-start">427909 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Verify Search by selecting subcategories", "Search Functionality")</span>
+                <span class="method-start">512557 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">runners.EdgeRunner</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Verify Search by selecting category", "Search Functionality")</span>
+                <span class="method-start">513076 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">runners.ChromeRunner</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify List and Grid views with one product", "Search Functionality")</span>
+                <span class="method-start">571323 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">runners.EdgeRunner</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Verify Search by selecting subcategories", "Search Functionality")</span>
+                <span class="method-start">571766 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">runners.ChromeRunner</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify List and Grid views with multiple products", "Search Functionality")</span>
+                <span class="method-start">637955 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">runners.EdgeRunner</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify List and Grid views with one product", "Search Functionality")</span>
+                <span class="method-start">656583 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">runners.ChromeRunner</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify user can sort products", "Search Functionality")</span>
+                <span class="method-start">714418 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">runners.EdgeRunner</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify List and Grid views with multiple products", "Search Functionality")</span>
+                <span class="method-start">731554 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">runners.ChromeRunner</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify navigation to Product Compare", "Search Functionality")</span>
+                <span class="method-start">783747 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">runners.EdgeRunner</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify user can sort products", "Search Functionality")</span>
+                <span class="method-start">805483 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">runners.ChromeRunner</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify number of products displayed", "Search Functionality")</span>
+                <span class="method-start">825546 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">runners.EdgeRunner</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify navigation to Product Compare", "Search Functionality")</span>
+                <span class="method-start">847534 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">runners.ChromeRunner</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify Search textbox and Search icon", "Search Functionality")</span>
+                <span class="method-start">880363 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify Search field on application page", "Search Functionality")</span>
+                <span class="method-start">902312 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">runners.EdgeRunner</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify number of products displayed", "Search Functionality")</span>
+                <span class="method-start">902689 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">runners.ChromeRunner</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify navigation to Search page from Site Map", "Search Functionality")</span>
+                <span class="method-start">947601 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">runners.EdgeRunner</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify Search textbox and Search icon", "Search Functionality")</span>
+                <span class="method-start">964613 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">runners.ChromeRunner</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify Breadcrumb of Search page", "Search Functionality")</span>
+                <span class="method-start">965758 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify Search using keyboard", "Search Functionality")</span>
+                <span class="method-start">999719 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">runners.EdgeRunner</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify Search field on application page", "Search Functionality")</span>
+                <span class="method-start">1000345 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify navigation to Search page from Site Map", "Search Functionality")</span>
+                <span class="method-start">1050831 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">runners.ChromeRunner</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify Search page Heading Title and URL", "Search Functionality")</span>
+                <span class="method-start">1051368 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify Search UI", "Search Functionality")</span>
+                <span class="method-start">1076620 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">runners.EdgeRunner</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify Breadcrumb of Search page", "Search Functionality")</span>
+                <span class="method-start">1076626 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">runners.ChromeRunner</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify Search functionality", "Search Functionality")</span>
+                <span class="method-start">1081670 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">runners.EdgeRunner</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify Search using keyboard", "Search Functionality")</span>
+                <span class="method-start">1081822 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">runners.ChromeRunner</div> <!-- chronological-class-name -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">1088433 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">runners.EdgeRunner</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify Search page Heading Title and URL", "Search Functionality")</span>
+                <span class="method-start">1088531 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify Search UI", "Search Functionality")</span>
+                <span class="method-start">1092574 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify Search functionality", "Search Functionality")</span>
+                <span class="method-start">1095129 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">1097956 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
