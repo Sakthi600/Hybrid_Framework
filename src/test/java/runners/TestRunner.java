@@ -12,7 +12,7 @@ import io.cucumber.testng.CucumberOptions.SnippetType;
 		"html:target/cucumber-report.html", "json:target/cucumber.json",
 		"io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm" },
 		// tags = "@TC_SF_007",
-		dryRun = true, snippets = SnippetType.CAMELCASE, monochrome = false, publish = true)
+		dryRun = true, snippets = SnippetType.CAMELCASE, monochrome = false, publish = false)
 public class TestRunner extends AbstractTestNGCucumberTests {
 
 	@BeforeClass(alwaysRun = true)
